@@ -9,6 +9,7 @@
 		outline: 1px solid #005290;
 	}
 </style>
+
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
@@ -35,17 +36,17 @@
 
 		embedded_svc.init(
 			'https://centralchatshop--uat2.my.salesforce.com',
-			'https://uat2-centralchatshop.cs113.force.com/takesurvey',
+			'https://uat2-centralchatshop.cs113.force.com',
 			gslbBaseURL,
 			'00D1s0000000TDv',
 			'CGO_B2S_Live_Chat',
 			{
 				baseLiveAgentContentURL: 'https://c.la2-c1cs-hnd.salesforceliveagent.com/content',
-				deploymentId: '5720o000000PodB',
+				deploymentId: '5720o000000PoYt',
 				buttonId: '5731s0000008OZV',
 				baseLiveAgentURL: 'https://d.la2-c1cs-hnd.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1s0000008ObvEAE_17a1cf45851',
-				isOfflineSupportEnabled: false
+				isOfflineSupportEnabled: true
 			}
 		);
 	};
@@ -61,7 +62,6 @@
 		initESW('https://service.force.com');
 	}
 </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
 
