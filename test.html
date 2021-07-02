@@ -33,17 +33,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://centralchatshop.my.salesforce.com',
-			'https://centralchatshop-community.force.com',
+			'https://centralchatshop--uat2.my.salesforce.com',
+			'https://uat2-centralchatshop-community.cs113.force.com',
 			gslbBaseURL,
-			'00D0o000000S2XT',
-			'CGO_B2S_Live_Chat',
+			'00D1s0000000TDv',
+			'CGO_B2S_Live_Chat_Group',
 			{
-				baseLiveAgentContentURL: 'https://c.la2-c1-hnd.salesforceliveagent.com/content',
-				deploymentId: '5720o000000PodB',
-				buttonId: '5735h000000YC5w',
-				baseLiveAgentURL: 'https://d.la2-c1-hnd.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'CGO_B2S_Live_Chat',
+				baseLiveAgentContentURL: 'https://c.la2-c1cs-hnd.salesforceliveagent.com/content',
+				deploymentId: '5721s0000004CdN',
+				buttonId: '5731s0000008OZa',
+				baseLiveAgentURL: 'https://d.la2-c1cs-hnd.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'CGO_B2S_Live_Chat_Group',
 				isOfflineSupportEnabled: true
 			}
 		);
@@ -51,7 +51,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://centralchatshop.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://centralchatshop--uat2.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
